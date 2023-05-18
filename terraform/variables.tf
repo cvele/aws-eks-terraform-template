@@ -106,3 +106,8 @@ variable "redis_nodes" {
 variable "container_image" {
   description = "The Docker image to run in the EKS cluster"
 }
+
+variable "replicas" {
+  description = "Minimum number of worker nodes in the EKS cluster"
+  default     = 1
+}
