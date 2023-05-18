@@ -25,5 +25,5 @@ output "s3_bucket_name" {
 
 output "route53_nameservers" {
   description = "DNS name servers for the zone"
-  value = aws_route53_zone.main.name_servers
+  value = module.route53.name_servers
 }
